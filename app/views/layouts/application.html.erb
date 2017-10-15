@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Programacao</title>
+    <title>Desafio de Programação by Marvio Rocha</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+
+
+    <%= render "/layouts/profile" %>
+    
+    <%= render "/layouts/menu" %>
+
+    <div class="col-md-9">
+        <div class="profile-content">
+      <%= yield %>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <%= render "/layouts/footer" %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </body>
 </html>
