@@ -1,6 +1,36 @@
 <div class="jumbotron">
   <h2>Desafio de programação</h2>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi totam sequi velit consequatur alias, aspernatur commodi facilis illum, nam quos necessitatibus culpa perferendis ullam pariatur ipsum consequuntur repudiandae itaque optio?
+  Importe dados para lista de tabela de vendas
 <%= render "upload" %>
   <p></p>
 </div>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Purchaser Name</th>
+        <th>Item Description</th>
+        <th>item Price</th>
+        <th>Purchase Count</th>
+        <th>Merchant Address</th>
+        <th>Merchant Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
