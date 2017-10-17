@@ -1,3 +1,15 @@
+# Read ME Desafio.
+
+Apenas fiz o importe dos dados em CSV
+Fiz o upload do arquivos porem não no formato .tab usando o perse...
+para ver em produção segue aqui:
+https://desafioprogramacao.herokuapp.com
+
+# Exemplo em CSV
+
+https://drive.google.com/uc?export=download&id=0B2x_KtWLGP7dSDhGRWY5aHNwRWs
+
+
 # Desafio de programação 1
 A idéia deste desafio é nos permitir avaliar melhor as habilidades de candidatos à vagas de programador, de vários níveis.
 
@@ -33,7 +45,7 @@ Sua aplicação web não precisa:
 1. Ter uma aparência bonita.
 
 ## Avaliação
-Seu projeto será avaliado de acordo com os seguintes critérios. 
+Seu projeto será avaliado de acordo com os seguintes critérios.
 
 1. Sua aplicação preenche os requerimentos básicos?
 1. Você documentou a maneira de configurar o ambiente e rodar sua aplicação?
