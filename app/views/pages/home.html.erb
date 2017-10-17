@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <h2>Desafio de programação</h2>
   Importe dados para lista de tabela de vendas
-<%= render "upload" %>
+
   <p></p>
 </div>
 
@@ -17,20 +17,17 @@
       </tr>
     </thead>
     <tbody>
+      <% @vendas.each do |vendas| %>
       <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
+        <td><%= vendas.purchaser_name %></td>
+        <td><%= vendas.item_description %></td>
+        <td><%= vendas.item_price %></td>
+        <td><%= vendas.purchase_count %></td>
+        <td><%= vendas.merchant_address %></td>
+        <td><%= vendas.merchant_name %></td>
+
       </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-      </tr>
+      <% end %>
+
     </tbody>
   </table>

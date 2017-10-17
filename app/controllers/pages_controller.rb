@@ -1,6 +1,8 @@
 class PagesController < ApplicationController
 
   def home
-    @venda = Venda.new
+@vendas = Venda.all
   end
+
+
 end

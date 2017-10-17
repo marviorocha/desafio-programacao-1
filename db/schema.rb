@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171015055935) do
+ActiveRecord::Schema.define(version: 20171016230102) do
+
+  create_table "sales", force: :cascade do |t|
+    t.string "purchaser_name"
+    t.text "item_description"
+    t.integer "item_price"
+    t.integer "purchase_count"
+    t.text "merchant_adress"
+    t.string "merchant_name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 # Could not dump table "vendas" because of following StandardError
 #   Unknown type 'json' for column 'documents'

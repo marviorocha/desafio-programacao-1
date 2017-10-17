@@ -1,15 +1,11 @@
 class Venda < ApplicationRecord
 
-def new
-  u = User.new
-  u.file = params[:file] # Assign a file like this, or
-
-  # like this
-  File.open('somewhere') do |f|
-    u.file = f
-  end
+   def self.import(file)
+     CSV.foreach(file.path, headers: true) do |row|
+       Venda.create! row.to_hash
+     end
+   end
 
 
-end
 
 end
